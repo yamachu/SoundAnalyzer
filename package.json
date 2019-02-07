@@ -4,10 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "16.8.2",
+    "@types/react-dom": "16.8.0",
     "source-map-loader": "0.2.4",
     "ts-loader": "5.3.3",
     "typescript": "3.3.1",
     "webpack": "4.29.3",
     "webpack-cli": "3.2.3"
+  },
+  "dependencies": {
+    "react": "16.8.1",
+    "react-dom": "16.8.1"
   }
 }
