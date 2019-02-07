@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const output_path = 'dist';
 
@@ -24,6 +25,12 @@ module.exports = function(env, argv) {
                     { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
                 ],
             },
+            plugins: [
+                new HtmlWebpackPlugin({
+                    template: 'template/index.html',
+                    filename: 'index.html',
+                }),
+            ],
         },
     ];
 };
